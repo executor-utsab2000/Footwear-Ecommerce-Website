@@ -1,0 +1,268 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #edede9;
+}
+
+.header {
+    background-color: white;
+    z-index: 15 !important;
+    position: fixed;
+    width: 100%;
+    padding: 1.25rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .navbar-brand {
+        img {
+            filter: drop-shadow(0, 0, 0, 0.24) 0px 3px 8px;
+            ;
+            height: 5rem;
+        }
+
+    }
+
+}
+
+.otherpageTop {
+    position: relative;
+    margin-top: 7.5rem;
+    background-image: url('../images/landing.jpg');
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+
+    .backgroundOverLay {
+        position: absolute;
+        background-color: rgb(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+    }
+
+    .contentHeader {
+        letter-spacing: 2px;
+        // background-color: aqua;
+        z-index: 2;
+        color: #f5ebe0;
+        font-size: 3rem;
+
+        img {
+            min-width: 17rem;
+            width: 40vw;
+            transition: 0.3s;
+
+            &:hover {
+                transform: translate3d(50px, 20px, 30px);
+            }
+        }
+
+    }
+
+
+    .pageHeader {
+        margin-top: 2rem;
+        z-index: 2;
+        color: #fcbf49;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+}
+
+.priceDetails {
+
+    .priceHeader {
+        margin-top: 0.5rem;
+        padding-bottom: 0.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #adb5bd;
+        font-size: 0.9rem;
+        border-bottom: #99a3ab 1px solid;
+    }
+
+    .subHeaders {
+        font-weight: 700;
+        color: #495057;
+        font-size: 0.8rem;
+
+
+        .cancel {
+            text-decoration: line-through;
+            padding-right: 0.3rem;
+            color: #ef233c;
+        }
+    }
+
+    .totalAmount {
+        padding: 0.8rem 0;
+        border-top: 2px dotted #99a3ab;
+        border-bottom: 2px dotted #99a3ab;
+        font-size: 0.9rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .comment {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: #4caf50;
+    }
+}
+
+
+.orderSummary {
+
+    .headerOrder {
+        padding: 1rem 1rem;
+        background-color: #8b8c89;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        border-radius: 10px;
+        word-spacing: 2px;
+    }
+
+    .content {
+        padding: 0.7rem 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+
+        .emailTxt {
+            color: #ef233c;
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-size: 0.7rem;
+            padding-right: 2rem;
+        }
+
+        .name {
+            color: #ffb703;
+            font-weight: 900;
+        }
+
+        .leftContent {
+            background-color: #e7ecef;
+            border-radius: 10px;
+
+            textarea {
+                background-color: transparent;
+                outline: none;
+                // border: none;
+                width: 46vw;
+                height: 15rem;
+                min-width: 19.2rem;
+                padding: 10px;
+                resize: none;
+                font-weight: 700;
+                font-size: 0.8rem;
+            }
+        }
+
+
+        button {
+            overflow: scroll;
+            border: none;
+            outline: none;
+            padding: 0.5rem 3rem;
+            font-weight: 700;
+            background-color: #a3cef1;
+            border-radius: 10px;
+            box-shadow: rgba(91, 91, 217, 0.2) 0px 7px 29px 0px;
+        }
+
+    }
+
+}
+
+
+
+.orderSummaryContent {
+
+
+    .content {
+        padding: 0.7rem 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        .orderItems {
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-bottom: 2px solid #ddb892;
+            border-radius: 10px;
+            padding-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        img {
+            height: 10rem;
+            width: 10rem !important;
+            border-radius: 10px;
+        }
+
+        .pdtBrand {
+            font-size: 0.75rem;
+            color: #fcbf49;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+
+        .pdtqty {
+            font-size: 0.8rem;
+            color: #ef233c;
+            font-weight: 900;
+        }
+
+        .pdtPrice {
+            font-size: 1rem;
+            color: #ef233c;
+            font-weight: 900;
+        }
+    }
+
+    .rightContent {
+        button {
+            border: none;
+            outline: none;
+            padding: 0.5rem 3rem;
+            font-weight: 700;
+            background-color: #a3cef1;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+
+}
+
+.placeOrderDiv {
+    // margin-bottom: 8.5rem;
+
+
+    button {
+        width: 15rem;
+        margin: 0 0.5rem;
+        padding: 0.7rem 3rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #fb5607;
+        text-transform: capitalize;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        font-size: 0.9rem;
+        color: white;
+        border: none;
+        outline: none;
+    }
+}

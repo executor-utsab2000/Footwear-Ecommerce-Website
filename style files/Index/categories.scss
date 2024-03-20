@@ -1,0 +1,42 @@
+.imgContainerCategory {
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    width: 6rem;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+
+    &:hover img {
+        transform: scale(1.2);
+    }
+
+
+    img {
+        height: 4.8rem;
+        width: 5rem !important;
+        transition: 0.3s;
+    }
+}
+
+
+.dropdown-menu {
+    border: none;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    a {
+        font-size: 0.9rem;
+        font-weight: 700;
+
+        &:hover {
+            background-color: #a2d2ff;
+            color: #ee9b00;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}

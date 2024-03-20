@@ -1,0 +1,28 @@
+.pricedBased{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .card{
+        // width: 12rem;
+        height: 20rem;
+
+        &:hover img{
+            transform: scale(1.2);
+        }
+
+        .imgContainer{   
+            padding: 5px;
+                overflow: hidden;
+            img{
+                height: 15rem !important;
+                transition: 0.5s;
+            }
+        }
+
+        .card-title{
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: capitalize;
+        }
+
+    }
+}

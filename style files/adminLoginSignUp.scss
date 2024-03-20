@@ -1,0 +1,123 @@
+.background {
+    position: fixed;
+    background-image: url('../images/admin.jpg');
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .topBtnContainer {
+        position: fixed;
+        top: 3rem;
+        right: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        button {
+            width: 9rem;
+            padding: 0.5rem 0;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+
+            &:first-of-type {
+                margin-right: 0.5rem;
+            }
+
+            &:last-of-type {
+                margin-left: 0.5rem;
+            }
+
+
+        }
+    }
+
+    .contentContainer {
+        display: flex;
+        max-width: 20rem;
+        min-width: 20rem !important;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        // overflow: hidden;
+
+
+        .login {
+            margin: 0 1rem;
+        }
+
+        .header {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        input {
+            padding: 5px;
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+
+            &::placeholder {
+                font-weight: 600;
+                color: gray;
+                font-size: 0.7rem;
+            }
+        }
+
+        button {
+            padding: 5px;
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-weight: 700;
+            background-color: aqua;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+
+        .signupLink {
+            font-size: 0.6rem;
+            font-weight: 700;
+        }
+
+    }
+
+    .imageContainer {
+
+        img {
+            height: 13rem;
+            border-radius: 15px;
+        }
+    }
+
+}
+
+.alertBox {
+    background-color: #ffbd00;
+    color: black;
+    letter-spacing: 1px;
+    position: fixed;
+    top: 10vh;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: none;
+    z-index: 5;
+    text-transform: capitalize;
+}

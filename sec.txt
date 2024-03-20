@@ -1,0 +1,72 @@
+    $category = $_GET['categoryColumnName'];
+    $categoryValue = $_GET['columnValue'];
+
+    $genderCol = $_GET['genderCol'];
+    $genderValue = $_GET['genderValue'];
+
+    $priceCol = $_GET['genderCol'];
+    $PriceValue = $_GET['genderValue'];
+
+
+
+
+
+    Premium Sneakers From ₹1,500 :
+            $category = $_GET['categoryColumnName'];
+            $categoryValue = $_GET['columnValue'];
+            
+            $priceCol = $_GET['genderCol'];
+            $PriceValue = $_GET['genderValue'];
+
+
+            Woman Sneakers From ₹5,500 : 
+                    $category = $_GET['categoryColumnName'];
+                    $categoryValue = $_GET['columnValue'];
+                    
+                    $priceCol = $_GET['priceCol'];
+                    $PriceValue = $_GET['PriceValue'];
+                    
+                    $genderCol = $_GET['genderCol'];
+                    $genderValue = $_GET['genderValue'];
+
+            
+
+
+
+             Soccer Boots From ₹500 :
+                    $category = $_GET['categoryColumnName'];
+                    $categoryValue = $_GET['columnValue'];
+            
+                    $priceCol = $_GET['priceCol'];
+                    $PriceValue = $_GET['PriceValue'];
+             
+
+
+             
+                    Formals From ₹900 :
+                    $category = $_GET['categoryColumnName'];
+                    $categoryValue = $_GET['columnValue'];
+            
+                    $priceCol = $_GET['priceCol'];
+                    $PriceValue = $_GET['PriceValue'];
+
+
+
+                    Women Footwear From ₹ 500:
+                            
+                            $priceCol = $_GET['genderCol'];
+                            $PriceValue = $_GET['genderValue'];
+                            
+                            $priceCol = $_GET['priceCol'];
+                            $PriceValue = $_GET['PriceValue'];
+
+
+
+
+
+                  Premium Soccer Boots From ₹10,000
+                        $category = $_GET['categoryColumnName'];
+                            $categoryValue = $_GET['columnValue'];
+                    
+                            $priceCol = $_GET['priceCol'];
+                            $PriceValue = $_GET['PriceValue'];

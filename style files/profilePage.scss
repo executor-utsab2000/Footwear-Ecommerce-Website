@@ -1,0 +1,376 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #edede9;
+}
+
+.toastStyle {
+    position: fixed;
+    right: 10px !important;
+    top: 10rem;
+    font-weight: 700;
+
+    .toast {
+        background-color: #ef233c;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        color: #fdca40;
+        letter-spacing: 1px;
+        font-size: 0.7rem;
+    }
+
+
+}
+
+.userProfile {
+
+    .pageHeader {
+        margin-top: 8rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-transform: capitalize;
+        color: #adb5bd;
+    }
+
+    .welcome {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #f7b801;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #6c757d;
+
+        span {
+            color: #df2935;
+            padding-left: 0.5rem;
+        }
+    }
+
+
+    .profileCard {
+        min-width: 18rem;
+        padding: 5px;
+        // height: 30rem;
+        border-radius: 10px;
+        border: #b6ad90 2px solid;
+        padding-bottom: 1rem;
+
+        img {
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .profileImage {
+            margin-top: -3rem;
+            position: absolute;
+            border-radius: 50%;
+            // padding: 5px;
+            border: 5px solid #fdca40;
+            overflow: hidden;
+            width: 5rem;
+            height: 5rem;
+            margin-left: 0.5rem;
+
+        }
+
+        .cardBody {
+            margin-top: 3rem;
+
+            .name {
+                font-weight: 800;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                color: #0b2545;
+            }
+
+            .contact {
+                font-size: 0.7rem;
+                font-weight: 700;
+                color: #ee9b00;
+
+                span {
+                    color: #df2935;
+                }
+            }
+
+            .supercoin {
+                color: #f7b801;
+                font-weight: 800;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+
+                span {
+                    font-weight: 700;
+                    font-size: 0.8rem;
+                    color: #343a40;
+                    letter-spacing: 0.5px;
+                }
+
+            }
+
+            .address {
+                margin-top: 1.5rem;
+
+                div:first-of-type {
+                    font-size: 0.9rem;
+                    font-weight: 800;
+                }
+
+                div:last-of-type {
+                    font-size: 0.7rem;
+                    font-weight: 650;
+                    text-align: justify;
+                    color: #6c757d;
+                }
+            }
+
+        }
+    }
+
+
+
+    .detailsFillup {
+        .header {
+            margin-left: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-bottom: 0.8rem;
+            border-radius: 10px;
+            border-bottom: #6c757d 2px solid;
+        }
+
+        label {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .inputFormDetails {
+            width: 100%;
+            border-radius: 10px;
+            padding: 0.5rem 1rem;
+            border: #6c757d 0.5px solid;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        textarea {
+            height: 15rem;
+            resize: none;
+        }
+
+        #deleteProfilePicture {
+            font-size: 0.9rem;
+        }
+
+        button {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #d62828;
+            padding: 0.5rem 0;
+            font-weight: 700;
+            color: #fdca40;
+            font-size: 1.2rem;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+
+
+
+    .deleteSection {
+        .content {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #6c757d;
+
+            .list {
+                font-size: 0.7rem;
+                color: #b4b9be;
+            }
+        }
+
+        button {
+            width: 100%;
+            border-radius: 10px;
+            background-color: #fdc500;
+            padding: 0.5rem 0;
+            font-weight: 700;
+            color: #d62828;
+            font-size: 1.2rem;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+
+
+
+    .modalBodyDelete {
+
+        .modal-content{
+            background-color: #eae0d5;
+
+            .modal-title{
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+
+            .txt1{
+                font-weight: 700;
+                font-size: 0.8rem;
+                
+                ul{
+                    font-style: italic;
+                    font-size: 0.7rem;
+                    color: #b08968;
+
+                }
+            }
+
+            .confirmTxt{
+                color: #df2935;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 0.9rem;
+                span{
+                    &:last-of-type{
+                        font-size: 0.85rem;
+                        font-style: italic;
+                        font-weight: 800;
+                    }
+                }
+                
+            }
+
+            input{
+                margin-top: 0.5rem;
+                width: 100%;
+                border-radius: 10px;
+                padding: 0.3rem 0.5rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 0.8rem;
+                border: none;
+                border-bottom: #c6ac8f 3px solid;
+                outline: none;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            button{
+                width: 10rem;
+                font-weight: 700;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
