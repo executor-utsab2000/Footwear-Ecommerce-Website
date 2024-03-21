@@ -30,7 +30,7 @@
 
             <!-- ---------------------------------------------------------------------------------------------------------- -->
             <div class="imageContainer d-none d-lg-flex">
-                <img src="./images/adminPic.jpg" alt="">
+                <img src="../images/adminPic.jpg" alt="">
             </div>
 
 
