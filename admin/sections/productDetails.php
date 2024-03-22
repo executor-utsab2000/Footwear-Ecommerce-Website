@@ -63,7 +63,7 @@ price -->
                                 <div class="col-md-5">
                                     <div class="row">
                                         <div class="col pdtId my-auto ">
-                                            <input type="text" name="" value="<?php echo $productId ?>" readonly>
+                                            <input type="text" name="productId" value="<?php echo $productId ?>" readonly>
                                         </div>
                                         <div class="col-9 productName my-auto ">
                                             <textarea name="productName" readonly
@@ -80,7 +80,7 @@ price -->
                                             <div class="imageContainer mt-2 mt-md-0">
                                                 <img src="<?php echo $productImage1 ?>" class="img-fluid" alt="❌🚫">
                                             </div>
-                                            <textarea name="productName" class="inputFields"
+                                            <textarea name="productImage1" class="inputFields"
                                                 readonly><?php echo $productImage1 ?></textarea>
                                         </div>
 
@@ -88,7 +88,7 @@ price -->
                                             <div class="imageContainer mt-2 mt-md-0">
                                                 <img src="<?php echo $productImage2 ?>" class="img-fluid" alt="❌🚫">
                                             </div>
-                                            <textarea name="productName" class="inputFields"
+                                            <textarea name="productImage2" class="inputFields"
                                                 readonly><?php echo $productImage2 ?></textarea>
                                         </div>
 
@@ -96,7 +96,7 @@ price -->
                                             <div class="imageContainer mt-2 mt-md-0">
                                                 <img src="<?php echo $productImage3 ?>" class="img-fluid" alt="❌🚫">
                                             </div>
-                                            <textarea name="productName" class="inputFields"
+                                            <textarea name="productImage3" class="inputFields"
                                                 readonly><?php echo $productImage3 ?></textarea>
                                         </div>
 
@@ -104,7 +104,7 @@ price -->
                                             <div class="imageContainer mt-2 mt-md-0">
                                                 <img src="<?php echo $productImage4 ?>" class="img-fluid" alt="❌🚫">
                                             </div>
-                                            <textarea name="productName" class="inputFields"
+                                            <textarea name="productImage4" class="inputFields"
                                                 readonly><?php echo $productImage4 ?></textarea>
                                         </div>
                                     </div>
@@ -123,11 +123,11 @@ price -->
                         <div class="col-lg-4 my-auto">
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" name="" value="<?php echo $productBrand ?>" readonly>
+                                    <input type="text" name="productBrand" value="<?php echo $productBrand ?>" readonly>
 
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="inputFields" name="" value="<?php echo $productGender ?>"
+                                    <input type="text" class="inputFields" name="productGender" value="<?php echo $productGender ?>"
                                         readonly>
                                     <select name="" id="" class="inputFields" disabled>
                                         <option value="" selected disabled>Select Gender </option>
@@ -137,7 +137,7 @@ price -->
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="inputFields" name="" value="<?php echo $productCategory ?>"
+                                    <input type="text" class="inputFields" name="productCategory" value="<?php echo $productCategory ?>"
                                         readonly>
                                     <select name="" id="" class="inputFields" disabled>
                                         <option value="" selected disabled>Select Category </option>
@@ -149,7 +149,7 @@ price -->
                                     </select>
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="inputFields" name=""
+                                    <input type="text" class="inputFields" name="categoryProductPopular"
                                         value="<?php echo $productPopularTrending ?>" readonly>
                                     <select name="" id="" class="inputFields" disabled>
                                         <option value="" selected disabled>Select type </option>
@@ -166,13 +166,17 @@ price -->
 
                         <div class="col-lg-1 my-auto">
                             <div class="row">
-                                <div class="col-6 col-lg-12 my-1">
-                                    <input type="text" class="inputFields" name=""
+                                <div class="col-6 col-lg-12 my-1 d-flex">
+                                    <input type="text" class="inputFields" name="productInStock"
                                         value="<?php echo $productInStock ?>" readonly> 
+                                        <span class="txt mt-1">Pcs</span> 
                                 </div>
-                                <div class="col-6 col-lg-12 my-1">
-                                    <input type="text" class="inputFields" name=""
-                                        value=" <?php echo $productPrice ?>" readonly>
+
+                                <div class="col-6 col-lg-12 my-1 d-flex">
+                                    <span class="rupeesTxt mt-1">₹</span>
+                                    <input type="text" class="inputFields" name="productPrice"
+                                    value=" <?php echo $productPrice ?>" readonly>
+                                    <span class="rupeesTxt mt-1">/-</span>
                                 </div>
                             </div>
                         </div>
@@ -218,3 +222,6 @@ price -->
 
 
 </div>
+
+
+

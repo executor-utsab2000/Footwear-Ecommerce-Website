@@ -22,10 +22,13 @@ require '../backendFiles/connection.php';
     <link rel="stylesheet" href="../style files/contentContainer.scss" />
     <link rel="stylesheet" href="./style files/adminOrderTab.scss" />
     <link rel="stylesheet" href="./style files/adminProductTab.scss" />
+    <link rel="stylesheet" href="./style files/adminAddProduct.scss" />
 </head>
 
 <body>
     <div class="container-fluid px-0 admin">
+
+
         <nav>
             <div class="container d-flex justify-content-between">
                 <img src="../images/logo.png" alt="" />
@@ -41,8 +44,8 @@ require '../backendFiles/connection.php';
 
         <!-- tabs section -->
 
-        <div class="container mt-5">
-            <div class="contentContainer">
+        <div class="container mt-5 pt-5">
+            <div class="contentContainer mt-5">
                 <div class="row ulBtns">
                     <div class="col-12">
                         <ul class="nav nav-pills ulContainer" id="pills-tab" role="tablist">
@@ -84,6 +87,7 @@ require '../backendFiles/connection.php';
                             <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
                                 aria-labelledby="pills-profile-tab" tabindex="0">
                                 <?php require './sections/productDetails.php' ?>
+                                <?php require './sections/addProductModal.php' ?>
                             </div>
 
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel"
