@@ -24,6 +24,25 @@
         text-transform: capitalize;
         text-align: center;
     }
+    
+    select{
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        font-weight: 700;
+        font-size: 0.6rem;
+        text-transform: capitalize;
+        
+        option{
+            background-color: #bde0fe;
+            font-weight: 700;
+            font-size: 0.5rem;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+
 
     .productName{
         textarea{
@@ -41,8 +60,10 @@
 
         img {
             border-radius: 10px;
-            height: 2rem;
+            height: 3rem;
             width: 5rem;
+            aspect-ratio: 3/2;
+            object-fit: cover;
         }
     }
         

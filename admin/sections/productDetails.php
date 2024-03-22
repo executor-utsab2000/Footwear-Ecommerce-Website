@@ -47,46 +47,71 @@ price -->
 
         ?>
 
+
+
+
         <div class="col-12 my-2">
-            <form action="" method="post">
+            <form action="backendFiles/productUpdate.php" method="post">
                 <div class="contentContainer productTab">
                     <div class="row">
 
 
 
 
-                        <div class="col-lg-5 my-auto">
+                        <div class="col-lg-6 my-auto">
                             <div class="row">
-                                <div class="col pdtId my-auto ">
-                                    <input type="text" name="" value="<?php echo $productId ?>" readonly>
-                                </div>
-                                <div class="col-4 productName my-auto ">
-                                    <textarea name="productName" readonly><?php echo $productName ?></textarea>
-                                </div>
-
-                                <div class="col my-auto">
-                                    <div class="imageContainer">
-                                        <img src="<?php echo $productImage1 ?>" class="img-fluid" alt="❌🚫">
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="col pdtId my-auto ">
+                                            <input type="text" name="" value="<?php echo $productId ?>" readonly>
+                                        </div>
+                                        <div class="col-9 productName my-auto ">
+                                            <textarea name="productName" readonly
+                                                class="inputFields"><?php echo $productName ?></textarea>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col my-auto ">
-                                    <div class="imageContainer">
-                                        <img src="<?php echo $productImage2 ?>" class="img-fluid" alt="❌🚫">
+
+
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-6 col-md my-auto">
+                                            <div class="imageContainer mt-2 mt-md-0">
+                                                <img src="<?php echo $productImage1 ?>" class="img-fluid" alt="❌🚫">
+                                            </div>
+                                            <textarea name="productName" class="inputFields"
+                                                readonly><?php echo $productImage1 ?></textarea>
+                                        </div>
+
+                                        <div class="col-6 col-md my-auto ">
+                                            <div class="imageContainer mt-2 mt-md-0">
+                                                <img src="<?php echo $productImage2 ?>" class="img-fluid" alt="❌🚫">
+                                            </div>
+                                            <textarea name="productName" class="inputFields"
+                                                readonly><?php echo $productImage2 ?></textarea>
+                                        </div>
+
+                                        <div class="col-6 col-md my-auto">
+                                            <div class="imageContainer mt-2 mt-md-0">
+                                                <img src="<?php echo $productImage3 ?>" class="img-fluid" alt="❌🚫">
+                                            </div>
+                                            <textarea name="productName" class="inputFields"
+                                                readonly><?php echo $productImage3 ?></textarea>
+                                        </div>
+
+                                        <div class="col-6 col-md my-auto">
+                                            <div class="imageContainer mt-2 mt-md-0">
+                                                <img src="<?php echo $productImage4 ?>" class="img-fluid" alt="❌🚫">
+                                            </div>
+                                            <textarea name="productName" class="inputFields"
+                                                readonly><?php echo $productImage4 ?></textarea>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="col my-auto">
-                                    <div class="imageContainer">
-                                        <img src="<?php echo $productImage3 ?>" class="img-fluid" alt="❌🚫">
-                                    </div>
-                                </div>
 
-                                <div class="col my-auto">
-                                    <div class="imageContainer">
-                                        <img src="<?php echo $productImage4 ?>" class="img-fluid" alt="❌🚫">
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
 
@@ -95,19 +120,43 @@ price -->
 
 
 
-                        <div class="col-lg-5 my-auto">
+                        <div class="col-lg-4 my-auto">
                             <div class="row">
                                 <div class="col">
                                     <input type="text" name="" value="<?php echo $productBrand ?>" readonly>
+
                                 </div>
                                 <div class="col">
-                                    <input type="text" name="" value="<?php echo $productGender ?>" readonly>
+                                    <input type="text" class="inputFields" name="" value="<?php echo $productGender ?>"
+                                        readonly>
+                                    <select name="" id="" class="inputFields" disabled>
+                                        <option value="" selected disabled>Select Gender </option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="children">Children</option>
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <input type="text" name="" value="<?php echo $productCategory ?>" readonly>
+                                    <input type="text" class="inputFields" name="" value="<?php echo $productCategory ?>"
+                                        readonly>
+                                    <select name="" id="" class="inputFields" disabled>
+                                        <option value="" selected disabled>Select Category </option>
+                                        <option value="sneakers">sneakers</option>
+                                        <option value="formals">formals</option>
+                                        <option value="heals">heals</option>
+                                        <option value="spikes">soccer boots</option>
+                                        <option value="crogs">crogs</option>
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <input type="text" name="" value="<?php echo $productPopularTrending ?>" readonly>
+                                    <input type="text" class="inputFields" name=""
+                                        value="<?php echo $productPopularTrending ?>" readonly>
+                                    <select name="" id="" class="inputFields" disabled>
+                                        <option value="" selected disabled>Select type </option>
+                                        <option value="trending">trending</option>
+                                        <option value="popular">popular</option>
+                                        <option value="normal">normal</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -117,11 +166,13 @@ price -->
 
                         <div class="col-lg-1 my-auto">
                             <div class="row">
-                                <div class="col-12 my-1">
-                                    <input type="text" name="" value="<?php echo $productInStock ?>" readonly>
+                                <div class="col-6 col-lg-12 my-1">
+                                    <input type="text" class="inputFields" name=""
+                                        value="<?php echo $productInStock ?>" readonly> 
                                 </div>
-                                <div class="col-12 my-1">
-                                    <input type="text" name="" value="<?php echo $productPrice ?>" readonly>
+                                <div class="col-6 col-lg-12 my-1">
+                                    <input type="text" class="inputFields" name=""
+                                        value=" <?php echo $productPrice ?>" readonly>
                                 </div>
                             </div>
                         </div>
@@ -132,19 +183,15 @@ price -->
 
                         <div class="col-lg-1 my-auto">
                             <div class="row">
-                                <div class="col-12 my-1">
-                                    <button type="submit" class="wishlistIcon" name="deleteItem">
-                                        <span data-toggle="tooltip" data-placement="right" title="Edit Item!">
-                                            <i class="fa-solid fa-pen-to-square"></i>
-                                        </span>
+                                <div class="col-6 col-lg-12 my-1">
+                                    <button type="submit" class="editBtn" name="editItem">
+                                        <span data-toggle="tooltip" data-placement="right" title="Edit Item!"><i class="fa-solid fa-pen-to-square"></i></span>
                                     </button>
                                 </div>
 
-                                <div class="col-12 my-1">
-                                    <button type="submit" class="wishlistIcon" name="deleteItem">
-                                        <span data-toggle="tooltip" data-placement="right" title="Delete Item!">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </span>
+                                <div class="col-6 col-lg-12 my-1">
+                                    <button type="submit" class="deleteBtn" name="deleteItem">
+                                        <span data-toggle="tooltip" data-placement="right" title="Delete Item!"><i class="fa-solid fa-trash-can"></i></span>
                                     </button>
                                 </div>
                             </div>
