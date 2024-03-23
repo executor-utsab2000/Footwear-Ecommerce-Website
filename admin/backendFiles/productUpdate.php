@@ -6,9 +6,9 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     require '../../backendFiles/connection.php';
-    echo "<pre>";
-    var_dump($_POST);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_POST);
+    // echo "</pre>";
 
 
     $productId = $_POST['productId'];
@@ -26,8 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-    $query = "UPDATE `product table` SET 
-                `product name`='$productName',
+    $query = "UPDATE `product table` SET  `product name`='$productName',
                 `brand name`='$productBrand',
                 `product in stock`='$productInStock',
                 `product Gender Type`='$productGender',

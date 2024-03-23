@@ -1,21 +1,22 @@
-.addProductModal{
-    
-    .modal-content{
+.addProductModal {
+
+    .modal-content {
         background-color: #f1faee;
 
 
-        .modal-header{
+        .modal-header {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             display: flex;
             justify-content: space-between;
 
 
-            .modal-title{
+            .modal-title {
                 font-weight: 700;
                 font-size: 1.5rem;
                 padding-left: 3vw;
             }
-            button{
+
+            button {
                 background-color: transparent;
                 border: 0;
                 border-radius: 50%;
@@ -24,54 +25,41 @@
             }
         }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        label {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 4rem;
+            border: #d4a373 2px solid;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-weight: 700;
+
+
+            &::placeholder {
+                font-weight: 700;
+                color: #d9d1a1;
+            }
+        }
+
+        select {
+            width: 100%;
+            height: 3rem;
+            border: #d4a373 2px solid;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            font-weight: 700;
+            
+            option{
+                font-weight: 700;
+                background-color: #d6ccc2;
+
+            }
+        }
 
 
 
@@ -80,15 +68,64 @@
 
 
 
-        .modal-footer{
-            button{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .modal-footer {
+            button {
                 width: 10rem;
                 font-weight: 700;
                 letter-spacing: 1px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             }
         }
-    
+
     }
-    
+
 }
