@@ -41,7 +41,29 @@ require '../backendFiles/connection.php';
                 </a>
             </div>
         </nav>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
 
+        <?php
+
+        if (isset ($_GET['msg'])) {
+            $msg = $_GET['msg'];
+
+            echo '
+                    <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="alert alert-warning alert-dismissible fade show alertBox" role="alert">
+                            <strong></strong> ' . $msg . '
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" id="alertCancel"></button>
+                        </div>
+                    </div>
+                    </div>
+                    ';
+        }
+
+        ?>
+
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
         <!-- tabs section -->
 
         <div class="container mt-5 pt-5">
@@ -178,6 +200,14 @@ require '../backendFiles/connection.php';
     });
 
 
+
+
+
+
+
+
+    
+    document.getElementById('alertCancel').addEventListener('click' , ()=> window.location.href = "adminIndex.php")
 
 
 

@@ -26,7 +26,7 @@
             <div class="modal-body">
                 <div class="container">
 
-                    <form action="" method="post">
+                    <form action="backendFiles/productAddModal.php" method="post">
                         <div class="row">
 
 
