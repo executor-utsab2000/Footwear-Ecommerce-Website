@@ -20,10 +20,9 @@ price -->
 
     <?php
 
-    $query = "SELECT * FROM `product table`";
-    $queryExec = mysqli_query($connection, $query);
-    // var_dump(mysqli_fetch_assoc($queryExec));
-    // $productData = mysqli_fetch_assoc($queryExec);
+    // $query = "SELECT * FROM `product table`";
+    // $queryExec = mysqli_query($connection, $query);
+    
     
     while ($productData = mysqli_fetch_assoc($queryExec)) {
 
@@ -225,3 +224,4 @@ price -->
 
 
 
+<br>

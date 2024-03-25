@@ -23,6 +23,7 @@ require '../backendFiles/connection.php';
     <link rel="stylesheet" href="./style files/adminOrderTab.scss" />
     <link rel="stylesheet" href="./style files/adminProductTab.scss" />
     <link rel="stylesheet" href="./style files/adminAddProduct.scss" />
+    <link rel="stylesheet" href="./style files/adminSubSectionProducts.scss" />
 </head>
 
 <body>
@@ -71,26 +72,26 @@ require '../backendFiles/connection.php';
                 <div class="row ulBtns">
                     <div class="col-12">
                         <ul class="nav nav-pills ulContainer" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
+                            <!-- <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                                     aria-selected="true">
                                     Customer
                                 </button>
-                            </li>
+                            </li> -->
 
                             <li class="nav-item mx-4" role="presentation">
-                                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-profile" type="button" role="tab" aria-c
-                                    ontrols="pills-profile" aria-selected="false">
+                                <button class="nav-link active" id="product-tab" data-bs-toggle="pill"
+                                    data-bs-target="#product" type="button" role="tab" aria-c
+                                    ontrols="product" aria-selected="false">
                                     Product
                                 </button>
                             </li>
 
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-contact" type="button" role="tab"
-                                    aria-controls="pills-contact" aria-selected="false">
+                                <button class="nav-link" id="orders-tab" data-bs-toggle="pill"
+                                    data-bs-target="#orders" type="button" role="tab"
+                                    aria-controls="orders" aria-selected="false">
                                     Orders
                                 </button>
                             </li>
@@ -101,19 +102,19 @@ require '../backendFiles/connection.php';
                 <div class="row mt-5 content">
                     <div class="col-12">
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                            <!-- <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                                 tabindex="0">
                                 customer
-                            </div>
+                            </div> -->
 
-                            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
-                                aria-labelledby="pills-profile-tab" tabindex="0">
-                                <?php require './sections/productDetails.php' ?>
+                            <div class="tab-pane fade show active" id="product" role="tabpanel"
+                                aria-labelledby="product-tab" tabindex="0">
+                                <?php require './sections/SubSections/productSubSection.php' ?>
                                 <?php require './sections/addProductModal.php' ?>
                             </div>
 
-                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="tab-pane fade" id="orders" role="tabpanel"
+                                aria-labelledby="orders-tab" tabindex="0">
                                 <?php require './sections/ordersTab.php' ?>
                             </div>
                         </div>
@@ -206,8 +207,8 @@ require '../backendFiles/connection.php';
 
 
 
-    
-    document.getElementById('alertCancel').addEventListener('click' , ()=> window.location.href = "adminIndex.php")
+
+    document.getElementById('alertCancel').addEventListener('click', () => window.location.href = "adminIndex.php")
 
 
 
