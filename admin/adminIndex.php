@@ -82,16 +82,15 @@ require '../backendFiles/connection.php';
 
                             <li class="nav-item mx-4" role="presentation">
                                 <button class="nav-link active" id="product-tab" data-bs-toggle="pill"
-                                    data-bs-target="#product" type="button" role="tab" aria-c
-                                    ontrols="product" aria-selected="false">
+                                    data-bs-target="#product" type="button" role="tab" aria-c ontrols="product"
+                                    aria-selected="false">
                                     Product
                                 </button>
                             </li>
 
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="orders-tab" data-bs-toggle="pill"
-                                    data-bs-target="#orders" type="button" role="tab"
-                                    aria-controls="orders" aria-selected="false">
+                                <button class="nav-link" id="orders-tab" data-bs-toggle="pill" data-bs-target="#orders"
+                                    type="button" role="tab" aria-controls="orders" aria-selected="false">
                                     Orders
                                 </button>
                             </li>
@@ -113,8 +112,8 @@ require '../backendFiles/connection.php';
                                 <?php require './sections/addProductModal.php' ?>
                             </div>
 
-                            <div class="tab-pane fade" id="orders" role="tabpanel"
-                                aria-labelledby="orders-tab" tabindex="0">
+                            <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab"
+                                tabindex="0">
                                 <?php require './sections/ordersTab.php' ?>
                             </div>
                         </div>
@@ -200,7 +199,19 @@ require '../backendFiles/connection.php';
         });
     });
 
+    let deleteBtn = document.querySelectorAll('.deleteBtn');
+    deleteBtn.forEach((eachBtn) => {
+        eachBtn.addEventListener('click', (e) => {
 
+            let productName = eachBtn.parentNode.parentNode.parentNode.parentNode.parentNode.querySelectorAll('.inputFields')[0].value;
+            console.log(productName);
+            let productId = eachBtn.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('.productId').value;
+            console.log(productId);
+            document.querySelector('#pdtName').innerHTML = productName;
+            document.querySelector('#productSubmitName').value = productName;
+            document.querySelector('#productSubmitId').value = productId;
+        })
+    })
 
 
 

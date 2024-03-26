@@ -62,11 +62,11 @@ price -->
                                 <div class="col-md-5">
                                     <div class="row">
                                         <div class="col pdtId my-auto ">
-                                            <input type="text" name="productId" value="<?php echo $productId ?>" readonly>
+                                            <input type="text" name="productId" class="productId" value="<?php echo $productId ?>" readonly>
                                         </div>
-                                        <div class="col-9 productName my-auto ">
+                                        <div class="col-9 productName my-auto " >
                                             <textarea name="productName" readonly
-                                                class="inputFields"><?php echo $productName ?></textarea>
+                                                class="inputFields" id="productName"><?php echo $productName ?></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -193,14 +193,46 @@ price -->
                                 </div>
 
                                 <div class="col-6 col-lg-12 my-1">
-                                    <button type="submit" class="deleteBtn" name="deleteItem">
+                                    <button type="button" class="deleteBtn"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <span data-toggle="tooltip" data-placement="right" title="Delete Item!"><i class="fa-solid fa-trash-can"></i></span>
                                     </button>
                                 </div>
                             </div>
                         </div>
 
+                        
 
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------delete modal--------------------------------------------------------------------------------- -->
+                    <!-- <div class="modal fade deleteModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+
+                                <div class="modal-header d-flex justify-content-between">
+                                    <span class="modal-title" id="exampleModalLabel">delete product</span>
+                                    <button type="button" class="deleteBtn" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="txt1">Are you sure you want to delete ?</div>
+                                    <div class="pdtName" id="pdtName">productName</div>
+
+
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary" name="deleteItem">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
 
                     </div>

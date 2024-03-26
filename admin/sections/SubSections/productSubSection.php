@@ -141,7 +141,7 @@
 
                 ?>
             </div>
-                
+
 
             <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -152,7 +152,7 @@
                 $query = "SELECT * FROM `product table` WHERE `product category` = 'spikes'";
                 $queryExec = mysqli_query($connection, $query);
                 $ifPresent = mysqli_num_rows($queryExec);
-                
+
                 if ($ifPresent < 1) {
                     echo '<div class="col-12 text-center noPresentTxt">No Products Present</div>';
                 } else {
@@ -173,7 +173,7 @@
                 $query = "SELECT * FROM `product table` WHERE `product category` = 'crogs'";
                 $queryExec = mysqli_query($connection, $query);
                 $ifPresent = mysqli_num_rows($queryExec);
-                
+
                 if ($ifPresent < 1) {
                     echo '<div class="col-12 text-center noPresentTxt">No Products Present</div>';
                 } else {
@@ -188,3 +188,40 @@
         </div>
     </div>
 </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------delete modal--------------------------------------------------------------------------------- -->
+<div class="modal fade deleteModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header d-flex justify-content-between">
+                <span class="modal-title" id="exampleModalLabel">delete product</span>
+                <button type="button" id="deleteBtn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="txt1">Are you sure you want to delete ?</div>
+                <div class="pdtName" id="pdtName">productName</div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Close</button>
+                <form action="backendFiles/productUpdate.php" method="post">
+                    <input type="hidden" id="productSubmitId" name="productId">
+                    <input type="hidden" id="productSubmitName" name="productName">
+                    <button type="submit" class="btn btn-success" name="deleteItem">Save changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
